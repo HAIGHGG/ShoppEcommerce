@@ -28,8 +28,8 @@ const Cart = () => {
 		stripe.redirectToCheckout({ sessionId: data.id })
 	}
 	return (
-		<div className='fixed top-0 right-0 w-full h-full z-10' ref={cartRef}>
-			<div className='flex flex-col p-10 w-full h-full bg-slate-200'>
+		<div className='fixed top-0 right-0 w-full h-full z-10 bg-black-rgba' ref={cartRef}>
+			<div className='flex flex-col p-10 w-full lg:w-1/3 lg:ml-auto h-full bg-slate-200'>
 				<button type='button' className='' onClick={() => setShowCart(false)}>
 					<AiOutlineLeft />
 				</button>

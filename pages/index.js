@@ -13,7 +13,7 @@ const index = ({ products, bannerData }) => {
 				<h2 className='font-bold text-indigo-700 text-2xl'>Best Selling Products</h2>
 				<p className='text-indigo-400'>Shoes of many variations</p>
 			</div>
-			<div className=''>
+			<div className='grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4'>
 				{products?.map(product => (
 					<Product key={product._id} product={product} />
 				))}

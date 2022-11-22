@@ -5,9 +5,9 @@ import Footer from './Footer'
 
 const Layout = ({children}) => {
   return (
-    <div className='flex flex-col min-h-screen justify-between py-5 px-10 bg-slate-200'>
+    <div className='flex flex-col min-h-screen justify-between py-5 lg:py-10 px-10 xl:px-64 bg-slate-200'>
         <Head>
-          <title>LolXd</title>
+          <title>Shopp</title>
         </Head>
         <header>
           <Navbar />
