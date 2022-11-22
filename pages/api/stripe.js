@@ -7,6 +7,7 @@ export default async function handler(req, res) {
 				submit_type: 'pay',
 				mode: 'payment',
 				payment_method_types: ['card'],
+				shipping_address_collection: { allowed_countries: ['PL'] },
 				billing_address_collection: 'auto',
 				shipping_options: [{ shipping_rate: 'shr_1M55waComt6XAcvNkJhj3c9M' }],
 				line_items: JSON.parse(req.body).map(item => {
