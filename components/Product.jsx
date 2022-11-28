@@ -9,7 +9,7 @@ const Product = ({ product: { image, name, slug, price } }) => {
 				<div className='flex flex-col items-center mb-6 '>
 					<img src={urlFor(image && image[0])} width={250} height={250} className='rounded-3xl cursor-pointer' />
 					<p className='font-bold cursor-pointer'>{name}</p>
-					<p className='product-price cursor-pointer'>{price}PLN</p>
+					<p className='cursor-pointer'>{price}PLN</p>
 				</div>
 			</Link>
 		</div>

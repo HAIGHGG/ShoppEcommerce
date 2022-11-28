@@ -30,7 +30,7 @@ const Cart = () => {
 	return (
 		<div className='fixed top-0 right-0 w-full h-full z-10 bg-black-rgba' ref={cartRef}>
 			<div className='flex flex-col p-10 w-full lg:w-1/3 lg:ml-auto h-full bg-slate-200'>
-				<button type='button' className='' onClick={() => setShowCart(false)}>
+				<button type='button' onClick={() => setShowCart(false)}>
 					<AiOutlineLeft />
 				</button>
 				<div className='flex flex-col gap-5 my-5 text-left'>
@@ -61,14 +61,14 @@ const Cart = () => {
 										<h5>{item.name}</h5>
 										<h4>{item.price}PLN</h4>
 									</div>
-									<div className=''>
+									<div>
 										<div className='flex flex-row items-center justify-between w-24 gap-4 rounded bg-slate-100'>
 											<span
 												className='minus bg-white rounded p-0.5'
 												onClick={() => toggleCartItemQuantity(item._id, 'dec')}>
 												<AiOutlineMinus />
 											</span>
-											<span className='num ' onClick=''>
+											<span className='num' onClick=''>
 												{item.quantity}
 											</span>
 											<span

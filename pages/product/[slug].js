@@ -19,7 +19,7 @@ const ProductDetails = ({ product, products }) => {
 		<div>
 			<div className='flex flex-col xl:flex-row xl:gap-32'>
 				<div className='xl:w-6/12'>
-					<div className=''>
+					<div>
 						<img src={urlFor(image && image[index])} />
 					</div>
 					<div className='flex flex-row gap-2 my-5 '>
@@ -37,7 +37,7 @@ const ProductDetails = ({ product, products }) => {
 						))}
 					</div>
 				</div>
-				<div className=''>
+				<div>
 					<h1 className='xl:text-3xl 2xl:text-6xl'>{name}</h1>
 					<div className='flex flex-row items-center mb-5 xl:mt-5 xl:text-lg text-indigo-700'>
 						<AiFillStar />
@@ -82,7 +82,7 @@ const ProductDetails = ({ product, products }) => {
 			</div>
 			<div>
 				<h2 className='pb-2 flex flex-col items-center my-9 border-b-4 border-indigo-300 lg:text-3xl'>Others Also Bought</h2>
-				<div className='marquee'>
+				<div>
 					<div className='grid md:grid-cols-2 xl:grid-cols-4 md:gap-20'>
 						{products.slice(products.length - 4, products.length).map(item => (
 							<Product key={item._id} product={item} />
